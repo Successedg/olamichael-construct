@@ -1,0 +1,154 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#000;
+  color:white;
+}
+
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:60px;
+  color:#facc15;
+}
+
+.hero p{
+  margin-top:20px;
+  font-size:20px;
+  max-width:700px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  background:#facc15;
+  color:black;
+  padding:15px 30px;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  padding:80px 10%;
+  align-items:center;
+  background:#111;
+}
+
+.about img{
+  width:100%;
+  border-radius:20px;
+}
+
+.about h2{
+  font-size:40px;
+  color:#facc15;
+  margin-bottom:20px;
+}
+
+.about p{
+  margin-bottom:20px;
+  line-height:1.8;
+  color:#ccc;
+}
+
+.services{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.services h2{
+  font-size:50px;
+  color:#facc15;
+  margin-bottom:50px;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#111;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.card h3{
+  color:#facc15;
+  margin:20px;
+}
+
+.card p{
+  margin:0 20px 30px;
+  color:#ccc;
+}
+
+.contact{
+  padding:100px 10%;
+  text-align:center;
+  background:#111;
+}
+
+.contact h2{
+  font-size:50px;
+  color:#facc15;
+  margin-bottom:20px;
+}
+
+footer{
+  padding:30px;
+  text-align:center;
+  border-top:1px solid #facc15;
+  color:#777;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .about{
+    grid-template-columns:1fr;
+  }
+
+  }
